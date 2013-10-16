@@ -1,4 +1,4 @@
-grunt-spriting-example
+Grunt Spriting Example
 ======================
 
 An example on how to seamlessly use spritesheets with Grunt.
