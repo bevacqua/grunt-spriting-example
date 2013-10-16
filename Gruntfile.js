@@ -2,9 +2,9 @@
 
 function sprite (type, short) {
   return {
-    src: 'src/client/img/sprite/' + type + '/**/*.{png,jpg,gif}',
+    src: 'src/img/sprite/' + type + '/**/*.{png,jpg,gif}',
     destImg: 'bin/public/img/sprite/' + type + '.png',
-    destCSS: 'bin/.tmp/sprite/' + type + '.css',
+    destCSS: 'bin/public/css/sprite/' + type + '.css',
     imgPath: '/img/sprite/' + type + '.png',
     cssOpts: {
       cssClass: function (item) {
