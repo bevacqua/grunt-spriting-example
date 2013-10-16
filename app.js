@@ -12,6 +12,6 @@ app.get('*', function (req, res) {
   res.sendfile('src/index.html');
 });
 
-app.listen(3001, function () {
+app.listen(3000, function () {
   console.log('express listening on port 3000');
 });
