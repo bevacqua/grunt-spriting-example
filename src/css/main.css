@@ -1,0 +1,11 @@
+body {
+  padding: 20px;
+  background-color: #f3dc52;
+  color: #412917;
+}
+
+.text {
+  font-family: 'Georgia';
+  font-size: 2em;
+  margin-left: 8px;
+}

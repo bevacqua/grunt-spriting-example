@@ -22,10 +22,23 @@ function sprite (type, short) {
 module.exports = function (grunt) {
 
   grunt.initConfig({
+    clean: {
+      all: ['bin']
+    },
+
+    copy: {
+      'bin/public/css/main.css': ['src/css/main.css'],
+      'bin/public/css/icons.css': ['src/css/icons.css']
+    },
+
     sprite: {
-      tools: sprite('tools', 'tl');
+      tools: sprite('tools', 'tl')
     }
   });
 
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-spritesmith');
+
+  grunt.registerTask('build', ['clean', 'copy', 'sprite']);
 };
